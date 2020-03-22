@@ -14,4 +14,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.targetString = lorem.sentence();
   }
+
+  onKey(currentInput: String): void {
+    console.log(currentInput);
+  }
 }
