@@ -10,12 +10,13 @@ export class AppComponent implements OnInit {
 
   title = 'typings';
   targetString = '';
+  success = false;
 
   ngOnInit(): void {
     this.targetString = lorem.sentence();
   }
 
   onKey(currentInput: String): void {
-    console.log(currentInput);
+    this.success = currentInput === this.targetString;
   }
 }
