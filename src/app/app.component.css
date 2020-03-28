@@ -1,0 +1,11 @@
+.notDone {
+  color: grey;
+}
+
+.wrong {
+  color: red;
+}
+
+.correct {
+  color: green;
+}
